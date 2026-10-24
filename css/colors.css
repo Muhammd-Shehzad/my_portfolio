@@ -1,0 +1,34 @@
+/* ==========================================================
+   COLORS — single source of truth (RGB channels so Tailwind
+   opacity modifiers like bg-brand-blue/15 keep working)
+   ========================================================== */
+:root {
+  --brand-navy: 11 61 145;      /* #0B3D91 */
+  --brand-blue: 47 128 237;     /* #2F80ED */
+  --brand-cyan: 0 198 255;      /* #00C6FF */
+  --brand-emerald: 16 185 129;  /* #10B981 */
+  --brand-dark-bg: 5 11 31;     /* #050B1F */
+  --brand-dark-surface: 11 19 43; /* #0b132b */
+  --brand-light-bg: 230 235 242;  /* #E6EBF2 */
+  --brand-light-surface: 240 244 248; /* #F0F4F8 */
+
+  /* Gradient helpers */
+  --gradient-text-light: linear-gradient(135deg, #0B3D91 0%, #2F80ED 50%, #00C6FF 100%);
+  --gradient-text-dark: linear-gradient(135deg, #60A5FA 0%, #2F80ED 50%, #00C6FF 100%);
+
+  /* Glass + neumorphic (light) */
+  --glass-bg: rgba(255, 255, 255, 0.65);
+  --glass-border: rgba(255, 255, 255, 0.7);
+  --glass-shadow: 0 10px 30px -10px rgba(11, 61, 145, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+  --neu-shadow: 8px 8px 20px #cfd6e0, -8px -8px 20px #ffffff;
+  --phone-shadow: 0 25px 50px -12px rgba(11, 61, 145, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+/* Dark theme overrides (applied when <html class="dark">) */
+.dark {
+  --glass-bg: rgba(11, 19, 43, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  --neu-shadow: 6px 6px 18px #020610, -6px -6px 18px #081028;
+  --phone-shadow: 0 30px 60px -15px rgba(0, 198, 255, 0.15), 0 0 0 1px rgba(255, 255, 255, 0.1);
+}

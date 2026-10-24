@@ -1,0 +1,26 @@
+/* ==========================================================
+   STYLE — glass, neumorphism & custom effects
+   (colors come from css/colors.css)
+   ========================================================== */
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+}
+.neu-card { box-shadow: var(--neu-shadow); }
+.phone-mockup-frame {
+  box-shadow: var(--phone-shadow);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.text-gradient {
+  background: var(--gradient-text-light);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.dark .text-gradient { background: var(--gradient-text-dark); -webkit-background-clip: text; background-clip: text; }
+.badge-glow { box-shadow: 0 0 15px rgb(var(--brand-emerald) / 0.4); }
+.typing-cursor { display: inline-block; width: 2px; animation: blink 1s infinite; }
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
